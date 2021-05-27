@@ -1,0 +1,13 @@
+<html>
+<body>
+<h1> Salary prediction with experience</h1>
+    <form action="{{url_for('predict')}}" method="post">
+       Enter Experience: <input type="text" name="experience"/>
+        <button type="submit" class="btn">Predict Salary</button>
+    </form>   
+    <br>
+    <br>
+    {{prediction_text}}
+
+</body>
+</html>
